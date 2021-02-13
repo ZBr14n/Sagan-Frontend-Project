@@ -1,0 +1,35 @@
+.banner {
+  background-color: #c8d5dc;
+  height: 40px;
+  animation-name: animBanner;
+  animation-delay: 6s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:after {
+    content: "Your brand, your story.";
+    animation-name: animBanner;
+    animation-delay: 6s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes animBanner {
+  from {
+    content: "Your brand, your story.";
+    background-color: #009cbd;
+    color: white;
+  }
+  to {
+    content: "Train and learn differently.";
+    background-color: #4c4184;
+    color: white;
+  }
+}
